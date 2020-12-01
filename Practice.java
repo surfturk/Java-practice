@@ -12,7 +12,13 @@ public class Practice {
         Point point1 = new Point(1, 1);
         Point point2 = point1;
         point1.x = 2;
-        System.out.println(point2);
+
+        String message = "  Hello World!  " + "Yes!";
+
+        System.out.println(message.replace("!", "*"));
+        System.out.println(message.toLowerCase());
+        System.out.println(message.trim());
+        System.out.println(message);
 
     }
 
