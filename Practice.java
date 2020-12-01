@@ -1,8 +1,8 @@
 public class Practice {
 
     public static void main(String[] args) {
-        int myAge = 34;
-        int herAge = myAge;
-        System.out.println(herAge);
+        byte age = 34;
+        int viewsCount = 123_456_789;
+        System.out.println(viewsCount);
     }
 }
