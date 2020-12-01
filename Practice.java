@@ -1,6 +1,9 @@
 public class Practice {
 
     public static void main(String[] args) {
-        System.out.println("Hello World");
+        int age = 34;
+        age = 35;
+
+        System.out.println(age);
     }
 }
