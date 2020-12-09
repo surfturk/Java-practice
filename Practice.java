@@ -1,8 +1,12 @@
 
 
 import java.awt.*;
+
 import java.util.Arrays;
+
 import java.util.Date;
+
+import java.util.Scanner;
 
 public class Practice {
 
@@ -60,7 +64,19 @@ public class Practice {
         int result5 = (int)Math.round(Math.random() * 100);
         System.out.println(result5);
 
-        // input
+
+         //input and scanner
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Age:");
+        byte age2 = scanner.nextByte();
+        System.out.println("You are " + age2);
+
+
+        // string input
+        Scanner scanner2 = new Scanner(System.in);
+        System.out.print("Name:");
+        String name = scanner2.nextLine().trim();
+        System.out.println("You are " + name);
     }
 
 }
