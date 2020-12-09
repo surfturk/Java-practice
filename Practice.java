@@ -25,6 +25,7 @@ public class Practice {
         Arrays.sort(numbers);
         System.out.println(Arrays.toString(numbers));
 
+        final float Pi = 3.14f;
 
 
 
