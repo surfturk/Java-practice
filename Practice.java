@@ -1,6 +1,7 @@
 
 
 import java.awt.*;
+import java.util.Arrays;
 import java.util.Date;
 
 public class Practice {
@@ -19,6 +20,12 @@ public class Practice {
         System.out.println(message.toLowerCase());
         System.out.println(message.trim());
         System.out.println(message);
+
+        int[] numbers = {2, 3, 5 ,1, 4};
+        System.out.println(numbers.length);
+
+
+
 
     }
 
