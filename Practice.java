@@ -40,10 +40,27 @@ public class Practice {
         x += 2;
         System.out.println(x);
 
+        //order of operations
+        int a = 10 + 3 * 2;
+        System.out.println(a);
+
+        // math class
+        int result2 = Math.round(1.1F);
+        System.out.println(result2);
+
+        int result3 = (int)Math.floor(1.1F);
+        System.out.println(result3);
+
+        // random number with rounded number
+        double result4 = Math.round(Math.random() * 100);
+        System.out.println(result4);
 
 
+        // random number with explicit casting
+        int result5 = (int)Math.round(Math.random() * 100);
+        System.out.println(result5);
 
-
+        // input
     }
 
 }
