@@ -30,5 +30,9 @@ public class ControlFlow {
             System.out.println("Cold day!");
 
 
+        int income = 120_000;
+        boolean hasHighIncome2 = (income > 100_000);
+
     }
+
 }
