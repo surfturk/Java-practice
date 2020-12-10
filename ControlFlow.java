@@ -1,4 +1,4 @@
-
+import java.util.Scanner;
 
 public class ControlFlow {
 
@@ -29,12 +29,46 @@ public class ControlFlow {
         else
             System.out.println("Cold day!");
 
-
+        // simplified if
         int income = 120_000;
         boolean hasHighIncome2 = (income > 100_000);
 
+        // ternary operator
         int income2 = 120_000;
         String className = income > 120_000 ? "First" : "Economy";
+
+
+        // switch statements
+        String role = "admin";
+        switch (role) {
+            case "admin":
+                System.out.println("You're an admin!");
+                break;
+
+            case "moderator":
+                System.out.println("You're a moderator");
+                break;
+
+            default:
+                System.out.println("You're a guest");
+        }
+
+
+        // FizzBuzz exercise
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Number: ");
+        int num = scanner.nextInt();
+
+        if (num % 5 == 0 && num % 3 == 0)
+            System.out.println("FizzBuzz");
+        else if (num % 5 == 0)
+            System.out.println("Fizz");
+        else if (num % 3 == 0)
+            System.out.println("Buzz");
+        else
+            System.out.println(num);
+
+
 
     }
 
