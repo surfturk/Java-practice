@@ -2,6 +2,7 @@
 
 import java.awt.*;
 
+import java.sql.SQLOutput;
 import java.util.Arrays;
 
 import java.util.Date;
@@ -91,6 +92,18 @@ public class Practice {
         System.out.print("Annual Interest Rate: ");
         float annualInterest = scanner.nextFloat();
         float monthlyInterest = annualInterest / PERCENT / MONTHS_IN_YEAR;
+
+        System.out.print("Period (Years): ");
+        byte years = scanner.nextByte();
+        int numberOfPayments = years * MONTHS_IN_YEAR;
+
+        double mortgage = principal
+                     * (monthlyInterest * Math.pow(1 + monthlyInterest, numberOfPayments))
+                     / (Math.pow(1 + monthlyInterest, numberOfPayments) - 1);
+
+
+        String mortgageFormatted = NumberFormat.getCurrencyInstance().format(mortgage);
+        System.out.println("Mortgage: " + mortgageFormatted);
 
 
 
