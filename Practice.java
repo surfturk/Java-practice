@@ -86,6 +86,13 @@ public class Practice {
         Scanner scanner3 = new Scanner(System.in);
 
         System.out.print("Principal: ");
+        int principal = scanner.nextInt();
+
+        System.out.print("Annual Interest Rate: ");
+        float annualInterest = scanner.nextFloat();
+        float monthlyInterest = annualInterest / PERCENT / MONTHS_IN_YEAR;
+
+
 
 
 
