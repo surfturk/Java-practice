@@ -5,7 +5,7 @@ import java.awt.*;
 import java.util.Arrays;
 
 import java.util.Date;
-
+import java.text.NumberFormat;
 import java.util.Scanner;
 
 public class Practice {
@@ -77,6 +77,20 @@ public class Practice {
         System.out.print("Name:");
         String name = scanner2.nextLine().trim();
         System.out.println("You are " + name);
+
+
+        // mortgage calculator
+        final byte MONTHS_IN_YEAR = 12;
+        final byte PERCENT = 100;
+
+        Scanner scanner3 = new Scanner(System.in);
+
+        System.out.print("Principal: ");
+
+
+
     }
+
+
 
 }
