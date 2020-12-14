@@ -7,9 +7,9 @@ public class UpdatedCalculator {
         final byte MONTHS_IN_YEAR = 12;
         final byte PERCENT = 100;
 
-        int principal = 0;
-        float monthlyInterest = 0;
-        int numberOfPayments = 0;
+        int principal;
+        float monthlyInterest;
+        int numberOfPayments;
 
         Scanner scanner = new Scanner(System.in);
 
@@ -42,6 +42,7 @@ public class UpdatedCalculator {
             }
             System.out.println("Enter a value between 1 and 30");
         }
+
             double mortgage = principal
                     * (monthlyInterest * Math.pow(1 + monthlyInterest, numberOfPayments))
                     / (Math.pow(1 + monthlyInterest, numberOfPayments) - 1);
