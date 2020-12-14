@@ -1,11 +1,11 @@
 public class CleanCode {
 
     public static void main(String[] args) {
-        greetUser("Berkley", "Brown");
+        String message = greetUser("Berkley", "Brown");
 
     }
 
-    public static void greetUser(String firstName, String lastName) {
-        System.out.println("Hello " + firstName + " " + lastName);
+    public static String greetUser(String firstName, String lastName) {
+       return "Hello " + firstName + " " + lastName;
     }
 }
