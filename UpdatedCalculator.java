@@ -4,14 +4,9 @@ import java.util.Scanner;
 public class UpdatedCalculator {
 
     public static void main(String[] args) {
-
-        int principal;
-        float annualInterest;
-        byte years;
-
-        principal = (int) readNumber("Principal: ", 1000, 1_000_000);
-        annualInterest = (float) readNumber("Annual Interest Rate: ", 1, 30);
-        years = (byte) readNumber("Period (Years): ", 1, 30);
+        int principal = (int) readNumber("Principal: ", 1000, 1_000_000);
+        float annualInterest = (float) readNumber("Annual Interest Rate: ", 1, 30);
+        byte years = (byte) readNumber("Period (Years): ", 1, 30);
 
         double mortgage = calculateMortgage(principal, annualInterest, years);
 
