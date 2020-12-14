@@ -69,6 +69,11 @@ public class ControlFlow {
             System.out.println(num);
 
 
+        // for loops
+
+        for (int i = 0; i < 5; i ++)
+            System.out.println("Hello World!");
+
 
     }
 
