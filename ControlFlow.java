@@ -75,14 +75,28 @@ public class ControlFlow {
 
 
         // while loops
+        // while using continue and break
         Scanner scanner5 = new Scanner(System.in);
         String input = "";
-        while (!input.equals("quit")) {
-            System.out.println("Input: ");
+        while (true) {
+            System.out.print("Input: ");
             input = scanner5.next().toLowerCase();
-            System.out.println(input);
+            if (input.equals("pass"))
+                continue;
+            if (input.equals("quit"))
+              break;
+             System.out.println(input);
 
         }
+
+        // do while (used rarely)
+//        do {
+//            System.out.println("Input: ");
+//            input = scanner5.next().toLowerCase();
+//            System.out.println(input);
+//        } while (!input.equals("quit"));
+
+
 
 
     }
