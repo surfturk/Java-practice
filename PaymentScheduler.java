@@ -20,7 +20,7 @@ public class PaymentScheduler {
         System.out.println();
         System.out.println("PAYMENT SCHEDULE");
         System.out.println("----------------");
-        for (short month =1; month < years * MONTHS_IN_YEAR; month++) {
+        for (short month = 1; month < years * MONTHS_IN_YEAR; month++) {
           double balance = calculateBalance(principal, annualInterest, years, month);
             System.out.println(NumberFormat.getCurrencyInstance().format(balance));
 
@@ -67,8 +67,7 @@ public class PaymentScheduler {
         float numberOfPayments = (float) (years * MONTHS_IN_YEAR);
 
         double balance = principal
-                * (Math.pow(1 + monthlyInterest, numberOfPayments)) -
-                Math.pow(1 + monthlyInterest, numberOfPaymentsMade)
+                * (Math.pow(1 + monthlyInterest, numberOfPayments) - Math.pow(1 + monthlyInterest, numberOfPaymentsMade))
                 / (Math.pow(1 + monthlyInterest, numberOfPayments - 1));
 
         return balance;
