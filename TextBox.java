@@ -1,5 +1,4 @@
-public class ClassesObjects {
-    public class TextBox {
+public class TextBox {
       public String text; // field
 
         public void setText(String text) {
@@ -11,4 +10,4 @@ public class ClassesObjects {
         }
 
     }
-}
+
