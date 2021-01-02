@@ -7,6 +7,10 @@ public class main {
         int wage = employee.calculateWage(10);
         System.out.println(wage);
 
+        //browser object
+        var browser = new Browser();
+        browser.navigate("google.com");
+
     }
 
 }
